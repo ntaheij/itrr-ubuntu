@@ -1,0 +1,23 @@
+{
+  "name": "itrr-ubuntu",
+  "version": "1.0.0",
+  "description": "ittr",
+  "main": "itrr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node itrr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntaheij/itrr-ubuntu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntaheij/itrr-ubuntu/issues"
+  },
+  "homepage": "https://github.com/ntaheij/itrr-ubuntu#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
