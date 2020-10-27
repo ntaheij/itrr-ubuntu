@@ -19,6 +19,7 @@ rm -r /var/itrr/itrr-startup.sh
 
 #Add to Startup
 chmod +x /etc/init.d/itrr.sh
+cd /etc/init.d
 sudo update-rc.d itrr.sh defaults
 sudo update-rc.d itrr.sh enable
 
