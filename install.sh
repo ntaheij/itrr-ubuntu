@@ -19,6 +19,7 @@ echo "cd /var/itrr && sudo nohup node itrr.js </dev/null >/dev/null 2>&1 &" > /e
 #Add to Startup
 chmod +x /etc/init.d/itrr.sh
 sudo update-rc.d itrr.sh defaults
+sudo update-rc.d itrr.sh enable
 
 #Execute
 cd /var/itrr
