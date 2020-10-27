@@ -9,4 +9,4 @@
 # Short-Description: itrr network services
 ### END INIT INFO
 
-cd /var/itrr && sudo nohup node itrr.js </dev/null >/dev/null 2>&1 &
+cd /var/itrr-ubuntu && sudo nohup node itrr.js </dev/null >/dev/null 2>&1 &

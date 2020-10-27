@@ -10,12 +10,11 @@ sudo apt-get install nodejs git
 cd /var/
 git clone https://github.com/ntaheij/itrr-ubuntu.git
 rm package-lock.json
-cp -a /var/itrr-ubuntu /var/itrr
-rm -r /var/itrr-ubuntu
+cp -a /var/itrr-ubuntu
 
 #Create Startup File
-cp -a /var/itrr/itrr-startup.sh /etc/init.d/itrr.sh
-rm -r /var/itrr/itrr-startup.sh
+cp -a /var/itrr-ubuntu/itrr-startup.sh /etc/init.d/itrr.sh
+rm -r /var/itrr-ubuntu/itrr-startup.sh
 
 #Add to Startup
 chmod +x /etc/init.d/itrr.sh
@@ -24,7 +23,7 @@ sudo update-rc.d itrr.sh defaults 100
 sudo update-rc.d itrr.sh enable
 
 #Execute
-cd /var/itrr
+cd /var/itrr-ubuntu
 sudo npm install
 sudo nohup node itrr.js </dev/null >/dev/null 2>&1 &
 
