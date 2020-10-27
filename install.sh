@@ -14,7 +14,7 @@ cp -a /var/itrr-ubuntu /var/itrr
 rm -r /var/itrr-ubuntu
 
 #Create Startup File
-echo "cd /var/itrr && sudo nohup node itrr.js" > /etc/init.d/itrr.sh
+echo "cd /var/itrr && sudo nohup node itrr.js </dev/null >/dev/null 2>&1 &" > /etc/init.d/itrr.sh
 
 #Add to Startup
 chmod +x /etc/init.d/itrr.sh
@@ -23,7 +23,7 @@ sudo update-rc.d itrr.sh defaults
 #Execute
 cd /var/itrr
 sudo npm install
-sudo nohup node itrr.js
+sudo nohup node itrr.js </dev/null >/dev/null 2>&1 &
 
 #Remove logs
 rm wget-log
