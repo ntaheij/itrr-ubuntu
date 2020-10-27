@@ -9,8 +9,8 @@ sudo apt-get install nodejs git
 #Install App
 cd /var/
 git clone https://github.com/ntaheij/itrr-ubuntu.git
-cp -a /var/testapp /var/itrr
-rm -r /var/testapp
+cp -a /var/itrr-ubuntu /var/itrr
+rm -r /var/itrr-ubuntu
 
 #Create Startup File
 echo "cd /var/itrr && sudo nohup node itrr.js" > /etc/init.d/itrr.sh
