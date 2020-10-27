@@ -9,6 +9,7 @@ sudo apt-get install nodejs git
 #Install App
 cd /var/
 git clone https://github.com/ntaheij/itrr-ubuntu.git
+rm package-lock.json
 cp -a /var/itrr-ubuntu /var/itrr
 rm -r /var/itrr-ubuntu
 
@@ -23,3 +24,6 @@ sudo update-rc.d itrr.sh defaults
 cd /var/itrr
 sudo npm install
 sudo nohup node itrr.js
+
+#Remove logs
+rm wget-log
