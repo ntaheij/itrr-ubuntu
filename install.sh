@@ -14,7 +14,8 @@ cp -a /var/itrr-ubuntu /var/itrr
 rm -r /var/itrr-ubuntu
 
 #Create Startup File
-echo "cd /var/itrr && sudo nohup node itrr.js </dev/null >/dev/null 2>&1 &" > /etc/init.d/itrr.sh
+cp -a /var/itrr/itrr-startup.sh /etc/init.d/itrr.sh
+rm -r /var/itrr/itrr-startup.sh
 
 #Add to Startup
 chmod +x /etc/init.d/itrr.sh
